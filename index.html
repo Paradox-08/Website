@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 85px;
+            background-color: rgb(78, 114, 181);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lavender;
+            font-size: 1.07rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(95, 95, 147);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(66, 66, 247);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 120%;
+        }
+
+        .orange {
+            color: orange;
+        }
+
+        .text-color {
+            color: black;
+        }
+
+        #element {
+            color: lavender;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.7rem;
+        }
+        footer{
+            background-color: lavender;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+            list-style: none;
+
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shreenidhi's Website</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Research Papers</a></li>
+                    <li><a href="/">Twitter</a></li>
+                    <li><a href="/">More</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, I am <span class="orange">Shreenidhi</span>
+                <div>I am a mechanical undergrad</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Linkedin</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-color">What i have done so far</span>
+            <h1>Experience</h1>
+            <div class="projects">
+                <div class="introp"><a href="/projects">Projects I have done</a></div>
+                <span class="pr 1"><a href="">Project_1 |</a></span>
+                <span class="pr 1"><a href="">Project_2 |</a></span>
+                <span class="pr 1"><a href="">Project_3 |</a></span>
+                <span class="pr 2"><a href="">Project_4 |</a></span>
+                <span class="pr 2"><a href="">Project_5</a></span>
+            </div>
+            <div class="research">
+                <div class="intror">research papers</div>
+                <div class="rc 1"><a href="#">currently not started</a>
+            </div>
+            <div class="blogs">
+                <div class="introb"><a href="">blogs</a></div>
+                <span class="bc 1"><a href="">blog_1 |</a>
+                <span class="bc 1"><a href="">blog_2 |</a>
+                <span class="bc 2"><a href="">blog_3 |</a>
+                <span class="bc 2"><a href="">Personal Views</a>
+            </span>
+    
+    
+    </span></span></div></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="first"><h3><a href="https://github.com/Paradox-08" target="_blank">Github</a></h3></div>
+            <div class="second"><h3><a href="https://x.com/PROBABLY_ffs" target="_blank">Twitter</a></h3></div>
+            <div class="third"><h3><a href="#">Random</a></h3></div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; Shredx | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['F1 enthusiast', '&amp; random.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
